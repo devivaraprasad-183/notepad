@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+    background-image: url('https://plus.unsplash.com/premium_photo-1669904022334-e40da006a0a3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bm90ZXBhZHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container holding the input field and button */
+.cointainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Box to contain input field and button */                                      
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the user input field */
+.user_data {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* Focus effect on the input field */
+.user_data:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the submit button */
+.btn {
+    background-color: #007BFF;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task container styling */
+.task_cointainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Styling for each task */
+.task_cointainer .tasker {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animation for fading in the task */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for task */
+.task_cointainer .tasker:hover {
+    transform: scale(1.05); /* Slightly enlarge the task on hover */
+}
+
+/* Styling for task list item */
+.task_cointainer .tasker li {
+    margin-right: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+/* Styling for the check button */
+.task_cointainer .tasker .cheaker {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task_cointainer .tasker .cheaker:hover {
+    background-color: #218838;
+}
+
+/* Styling for the delete button */
+.task_cointainer .tasker .deleter {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task_cointainer .tasker .deleter:hover {
+    background-color: #e04d26;
+}
+
+/* small gap 
+}
